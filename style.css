@@ -1,0 +1,313 @@
+body{
+    background-color: #fafeff;
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
+}
+p, h1{
+    margin:0;
+}
+
+.top-bar{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 17vh;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.logo{
+    font: 3rem "Oswald", Arial, sans-serif;
+    color: #474a4a;
+    margin-right: 50%;
+}
+.menu-1 , .footer-menu{
+    color: #474a4a;
+    font-size: 1.5rem;
+    height: 80px;
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    align-items: center;
+}
+.menu-1{
+    margin-left: 50%;
+    margin-right: 50px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer-menu{
+    height:18vh;
+}
+
+
+.menu-1 >*:hover , .footer-menu >*:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #474a4a;
+}
+.menu-2{
+    display: none;
+    position: relative;
+}
+#mini-menu{
+    position: absolute;
+    border: #474a4a solid 1.5px;
+    background-color: #fafeff;
+    border-radius: 5px;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    height: 150px;
+    right: 0;
+    margin-top: 5px;
+    display:none;
+}
+#mini-menu > *{
+    cursor: pointer;
+}
+.menu-icon{
+    color:#474a4a;
+    cursor: pointer;
+    scale: 150%;
+}
+.section{
+    height: 85vh;
+}
+.header{
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+.header > p{
+    font-size:1rem;
+    color:#474a4a;
+}
+.header > h1{
+    font-weight: 700;
+    font-size:3rem;
+    color:#474a4a;
+}
+.profile-section{
+    display: flex;
+    height: 83vh;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.profile-section > .text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-section > .text-section > p{
+    font-size:1.5rem;
+    color:#474a4a;
+}
+.profile-section > .text-section > .title{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+.profile-section > .text-section > h1{
+    font: 600 3rem "Oswald", Arial, sans-serif;
+    color: #de3847;
+}
+.image-1{
+    border-radius: 50%;
+    width: 400px;
+}
+.about-section{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.about-section .text-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.about-section > .text-section > p{
+    color: #474a4a;
+    width: 500px;
+    font-size: 1.25rem;
+}
+.about-section .education{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid #474a4a;
+    border-radius: 25px;
+    height: 100px;
+    padding: 2rem;
+    gap: 5px;
+}
+.about-section .education .title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.about-section .education p{
+    color: #474a4a;
+}
+.about-section .book-icon{
+    fill:#474a4a;
+    scale: 150%;
+}
+.image-2{
+    border-radius: 15%;
+    width:400px;
+}
+
+.experience-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.experience-section .language-icon{
+    width:10rem;
+    margin-bottom: 2rem;
+}
+.experience-section .language-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.experience-section .language-container h1{
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.experience-section .language-container p{
+    color: #474a4a;
+}
+
+
+.social-container{
+    display:flex;
+}
+.button-container{
+    display: flex;
+    gap:10px;
+    margin-bottom: 0.5rem;
+}
+.button-1{
+    border: 2px solid #de3847;
+    width: 150px;
+    height: 40px;
+    color: #de3847;
+    font-weight: 550;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #fafeff;
+}
+.button-1:hover{
+    border: none;
+    background-color: #de3847;
+    color: #fafeff;
+    cursor: pointer;
+}
+.button-2{
+    width: 150px;
+    height: 40px;
+    background-color: #044573;
+    color: #fafeff;
+    font-weight: 550;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.button-2:hover{
+    border: 2px solid #044573;
+    background-color: #fafeff;
+    color: #044573;
+    cursor: pointer;
+}
+.social-container > *:hover{
+    cursor: pointer;
+    fill: #de3847;
+}
+
+.contact-section{
+    height: 40vh;
+}
+
+/*Mobiles*/
+@media screen and (max-width:480px){
+    .section{
+        height: fit-content;
+    }
+    .menu-1{
+        display: none;
+    }
+    .menu-2{
+        display: block;
+    }
+    #mini-menu > span{
+        font-size: 1.2rem;
+    }
+    .logo{
+        font: 2.3rem "Oswald", Arial, sans-serif;
+    }
+    .profile-section{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .about-section .education{
+        height: 100px;
+        padding: 1rem;
+        gap: 1px;
+    }
+    .about-section >.text-section{
+        align-items: center;
+    }
+    .about-section >.text-section p{
+        font-size: 1.5rem;
+        width: 320px;
+        text-align: center;
+    }
+    .image-1 , .image-2{
+        width: 200px;
+    }
+    .experience-section{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .experience-section .language-icon{
+        width:5rem;
+        margin-bottom: 0.5rem;
+    }
+    .footer-menu{
+        font-size: 1rem;
+        gap: 1rem;
+    }
+}
+
+/*Tablets*/
+@media screen and (max-width:768px){
+    .menu-1{
+        display: none;
+    }
+    .menu-2{
+        display: block;
+    }
+    #mini-menu{
+        right: 0;
+        margin-top: 5px;
+        display:none;
+    }
+    #mini-menu > span{
+        font-size: 1.5rem;
+    }
+}

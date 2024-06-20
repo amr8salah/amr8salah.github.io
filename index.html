@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="main.js" type="text/javascript"></script>
+    <title>Amr Salah</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <span class="logo">Amr Salah</span>
+      <div class="menu-1">
+        <span onclick="goToAbout()">About</span>
+        <span onclick="goToExperience()">Experience</span>
+        <span onclick="goToProjects()">Projects</span>
+        <span onclick="goToContact()">Contact</span>
+      </div>
+      <div class="menu-2">
+        <span
+          onclick="toggleMiniMenu()"
+          class="menu-icon material-symbols-outlined"
+          >menu</span
+        >
+        <div id="mini-menu">
+          <span onclick="goToAbout()">About</span>
+          <span onclick="goToExperience()">Experience</span>
+          <span onclick="goToProjects()">Projects</span>
+          <span onclick="goToContact()">Contact</span>
+        </div>
+      </div>
+    </div>
+    <div class="profile-section section">
+      <img class="image-1" src="./assets/image-1.jpg" />
+      <div class="text-section">
+        <p>Hello, I'm</p>
+        <h1>Amr Salah</h1>
+        <p class="title">Computer Science Student</p>
+        <div class="button-container">
+          <button onclick="openCV()" class="button-1">Download CV</button>
+          <button onclick="goToContact()" class="button-2">Contact Info</button>
+        </div>
+        <div class="social-container">
+          <svg
+            onclick="openLinkedin()"
+            class="linkedin"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 50 50"
+            width="40px"
+            height="40px"
+          >
+            <path
+              d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+            />
+          </svg>
+          <svg
+            onclick="openGithub()"
+            class="github"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 30 30"
+            width="40px"
+            height="40px"
+          >
+            <path
+              d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div id="about-header" class="header">
+      <p>Get To Know More</p>
+      <h1>About Me</h1>
+    </div>
+    <div class="about-section section">
+      <img class="image-2" src="./assets/image-2.jpg" />
+      <div class="text-section">
+        <div class="education">
+          <svg
+            class="book-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm0-80h480v-640h-80v280l-100-60-100 60v-280H240v640Zm0 0v-640 640Zm200-360 100-60 100 60-100-60-100 60Z"
+            />
+          </svg>
+          <span class="title">Education</span>
+          <p>High School Diploma</p>
+        </div>
+        <p>
+          First year computer science student at Cairo university who loves to
+          discover things and make new friends. Gained problem solving skills
+          using C++, Python, JavaScript and Java.Currently enrolled at nandbox
+          as an intern. Seeking a job that makes me learn more technologies from
+          experienced team.
+        </p>
+      </div>
+    </div>
+    <div id="experience-header" class="header">
+      <p>Explore My</p>
+      <h1>Experience</h1>
+    </div>
+    <div class="experience-section section">
+      <div class="language-container">
+        <svg class="language-icon" viewBox="0 0 128 128">
+          <path
+            fill="#E44D26"
+            d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
+          ></path>
+          <path
+            fill="#F16529"
+            d="M64 116.8l36.378-10.086 8.559-95.878H64z"
+          ></path>
+          <path
+            fill="#EBEBEB"
+            d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"
+          ></path>
+          <path
+            fill="#fff"
+            d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
+          ></path>
+        </svg>
+        <h1>HTML</h1>
+        <p>Basic</p>
+      </div>
+
+      <div class="language-container">
+        <svg class="language-icon" viewBox="0 0 128 128">
+          <path
+            fill="#1572B6"
+            d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
+          ></path>
+          <path
+            fill="#33A9DC"
+            d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"
+          ></path>
+          <path
+            fill="#fff"
+            d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"
+          ></path>
+          <path
+            fill="#EBEBEB"
+            d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"
+          ></path>
+          <path
+            fill="#fff"
+            d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"
+          ></path>
+          <path
+            fill="#EBEBEB"
+            d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"
+          ></path>
+        </svg>
+        <h1>CSS</h1>
+        <p>Basic</p>
+      </div>
+      <div class="language-container">
+        <svg class="language-icon" viewBox="0 0 128 128">
+          <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
+          <path
+            fill="#323330"
+            d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"
+          ></path>
+        </svg>
+        <h1>Javascript</h1>
+        <p>Basic</p>
+      </div>
+      <div class="language-container">
+        <svg class="language-icon" viewBox="0 0 128 128">
+          <path
+            fill="#00599c"
+            d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Zm0 0"
+          ></path>
+          <path
+            fill="#004482"
+            d="m68.36 126.586 46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Zm0 0"
+          ></path>
+          <path
+            fill="#659ad2"
+            d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Zm0 0"
+          ></path>
+          <path
+            fill="#fff"
+            d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465-10.433 0-18.922-8.488-18.922-18.922 0-10.434 8.49-18.922 18.922-18.922 6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91zM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57H92.88zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57h-4.207z"
+          ></path>
+        </svg>
+        <h1>C++</h1>
+        <p>Basic</p>
+      </div>
+      <div class="language-container">
+        <svg class="language-icon" viewBox="0 0 128 128">
+          <path
+            fill="#0074BD"
+            d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"
+          ></path>
+          <path
+            fill="#EA2D2E"
+            d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"
+          ></path>
+          <path
+            fill="#0074BD"
+            d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.697 22.747c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"
+          ></path>
+          <path
+            fill="#EA2D2E"
+            d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"
+          ></path>
+          <path
+            fill="#0074BD"
+            d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"
+          ></path>
+        </svg>
+        <h1>Java</h1>
+        <p>Basic</p>
+      </div>
+    </div>
+    <div id="projects-header" class="header">
+      <p>Browse My Recent</p>
+      <h1>Projects</h1>
+    </div>
+    <div class="projects-section section">
+      <div class="projects"></div>
+    </div>
+    <div id="contact-header" class="header">
+      <p>Get in Touch</p>
+      <h1>Contact Me</h1>
+    </div>
+    <div class="contact-section section"></div>
+    <div class="footer">
+      <div class="footer-menu">
+        <span onclick="goToAbout()">About</span>
+        <span onclick="goToExperience()">Experience</span>
+        <span onclick="goToProjects()">Projects</span>
+        <span onclick="goToContact()">Contact</span>
+      </div>
+    </div>
+  </body>
+</html>
