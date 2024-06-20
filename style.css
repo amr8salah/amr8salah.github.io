@@ -1,6 +1,7 @@
 body{
     background-color: #fafeff;
     font-family: "Roboto", Arial, sans-serif;
+    color: #474a4a;
     margin: 0;
 }
 p, h1{
@@ -22,7 +23,6 @@ p, h1{
     margin-right: 50%;
 }
 .menu-1 , .footer-menu{
-    color: #474a4a;
     font-size: 1.5rem;
     height: 80px;
     display: flex;
@@ -68,7 +68,6 @@ p, h1{
     cursor: pointer;
 }
 .menu-icon{
-    color:#474a4a;
     cursor: pointer;
     scale: 150%;
 }
@@ -86,12 +85,10 @@ p, h1{
 }
 .header > p{
     font-size:1rem;
-    color:#474a4a;
 }
 .header > h1{
     font-weight: 700;
     font-size:3rem;
-    color:#474a4a;
 }
 .profile-section{
     display: flex;
@@ -107,7 +104,6 @@ p, h1{
 }
 .profile-section > .text-section > p{
     font-size:1.5rem;
-    color:#474a4a;
 }
 .profile-section > .text-section > .title{
     margin-top: 1rem;
@@ -135,7 +131,6 @@ p, h1{
     gap: 1rem;
 }
 .about-section > .text-section > p{
-    color: #474a4a;
     width: 500px;
     font-size: 1.25rem;
 }
@@ -154,9 +149,6 @@ p, h1{
 .about-section .education .title{
     font-size: 2rem;
     font-weight: bold;
-}
-.about-section .education p{
-    color: #474a4a;
 }
 .about-section .book-icon{
     fill:#474a4a;
@@ -186,14 +178,9 @@ p, h1{
 }
 .experience-section .language-container h1{
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 4vh;
     font-weight: bold;
-    color: #474a4a;
 }
-.experience-section .language-container p{
-    color: #474a4a;
-}
-
 
 .social-container{
     display:flex;
@@ -237,10 +224,36 @@ p, h1{
     fill: #de3847;
 }
 
+.projects-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 60vh;
+    border: 1px solid #474a4a;
+    border-radius: 50px;
+}
+.project img{
+    width: 50vh;
+    border-radius: 50px;
+}
+.project h1{
+    margin-top: 10vh;
+    margin-bottom: 10px;
+    font-size: 4vh;
+}
+
 .contact-section{
     display: flex;
     justify-content: center;
-    height: 40vh;
+    height: 25vh;
 }
 .contact-container{
     display: flex;
@@ -251,7 +264,6 @@ p, h1{
     height: 12vh;
     border: 1px solid #474a4a;
     border-radius: 50px;
-    color: #474a4a;
 }
 .contact-container .icon{
     scale:200%;
@@ -383,6 +395,13 @@ p, h1{
     .experience-section .language-icon{
         width:5rem;
         margin-bottom: 0.5rem;
+    }
+    .project{
+        width: 40vh;
+        height: 50vh;
+    }
+    .project img{
+        width: 35vh;
     }
     .contact-container{
         width: 300px;

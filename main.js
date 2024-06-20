@@ -30,3 +30,6 @@ function sendEmail()
 {
     window.location = "mailto:amrnandbox@gmail.com";
 }
+function gotoBabyPhotoshop(){
+    window.open("https://github.com/Belal-El-Shabrawy/assign3");
+}
