@@ -26,3 +26,7 @@ function toggleMiniMenu(){
         document.getElementById("mini-menu").style.display="flex";
     }
 }
+function sendEmail() 
+{
+    window.location = "mailto:amrnandbox@gmail.com";
+}

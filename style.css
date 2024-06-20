@@ -124,6 +124,7 @@ p, h1{
 }
 .about-section{
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
     justify-content: center;
@@ -168,6 +169,7 @@ p, h1{
 
 .experience-section{
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 5rem;
@@ -186,6 +188,7 @@ p, h1{
     margin-bottom: 0.5rem;
     font-size: 2rem;
     font-weight: bold;
+    color: #474a4a;
 }
 .experience-section .language-container p{
     color: #474a4a;
@@ -237,13 +240,43 @@ p, h1{
 }
 
 .contact-section{
+    display: flex;
+    justify-content: center;
     height: 40vh;
 }
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    width: 70vh;
+    height: 12vh;
+    border: 2px solid #474a4a;
+    border-radius: 50px;
+}
+.contact-container .icon{
+    scale:200%;
+    fill:#474a4a;
+}
+.contact-container p{
+    color: #474a4a;
+    font-size: 1.5rem;
+}
+.contact-container p:hover{
+    cursor: pointer;
+    border-bottom: 2px solid#474a4a;
+}
+.mail ,.linkedin{
+    display:flex;
+    gap: 20px;
+}
+
 
 /*Mobiles*/
 @media screen and (max-width:480px){
     .section{
         height: fit-content;
+        margin-bottom: 75px;
     }
     .menu-1{
         display: none;
@@ -281,12 +314,23 @@ p, h1{
         width: 200px;
     }
     .experience-section{
-        flex-direction: column;
         gap: 2rem;
     }
     .experience-section .language-icon{
         width:5rem;
         margin-bottom: 0.5rem;
+    }
+    .contact-container{
+        width: 300px;
+        height: 150px;
+        flex-wrap: wrap;
+        gap:0;
+    }
+    .contact-container p{
+        font-size: 1.25rem;
+    }
+    .contact-container .icon{
+        scale:150%;
     }
     .footer-menu{
         font-size: 1rem;
@@ -296,18 +340,66 @@ p, h1{
 
 /*Tablets*/
 @media screen and (max-width:768px){
+    .section{
+        height: fit-content;
+        margin-bottom: 75px;
+    }
     .menu-1{
         display: none;
     }
     .menu-2{
         display: block;
     }
-    #mini-menu{
-        right: 0;
-        margin-top: 5px;
-        display:none;
-    }
     #mini-menu > span{
+        font-size: 1.2rem;
+    }
+    .logo{
+        font: 2.3rem "Oswald", Arial, sans-serif;
+    }
+    .profile-section{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .about-section .education{
+        height: 100px;
+        padding: 1rem;
+        gap: 1px;
+    }
+    .about-section >.text-section{
+        align-items: center;
+    }
+    .about-section >.text-section p{
         font-size: 1.5rem;
+        width: 320px;
+        text-align: center;
+    }
+    .image-1 , .image-2{
+        width: 200px;
+    }
+    .experience-section{
+        gap: 2rem;
+    }
+    .experience-section .language-icon{
+        width:5rem;
+        margin-bottom: 0.5rem;
+    }
+    .contact-container{
+        width: 300px;
+        height: 150px;
+        flex-wrap: wrap;
+        gap:0;
+    }
+    .contact-container p{
+        font-size: 1.25rem;
+    }
+    .contact-container .icon{
+        scale:150%;
+    }
+    .footer-menu{
+        font-size: 1rem;
+        gap: 1rem;
     }
 }
