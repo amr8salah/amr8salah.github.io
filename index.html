@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="main.js" type="text/javascript"></script>
     <title>Amr Salah</title>
@@ -21,11 +20,7 @@
         <span onclick="goToContact()">Contact</span>
       </div>
       <div class="menu-2">
-        <span
-          onclick="toggleMiniMenu()"
-          class="menu-icon material-symbols-outlined"
-          >menu</span
-        >
+        <svg class="menu-icon" onclick="toggleMiniMenu()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
         <div id="mini-menu">
           <span onclick="goToAbout()">About</span>
           <span onclick="goToExperience()">Experience</span>

@@ -53,7 +53,7 @@ p, h1{
 }
 #mini-menu{
     position: absolute;
-    border: #474a4a solid 1.5px;
+    border: #474a4a solid 1px;
     background-color: #fafeff;
     border-radius: 5px;
     flex-flow: column nowrap;
@@ -68,7 +68,7 @@ p, h1{
     cursor: pointer;
 }
 .menu-icon{
-    color:#474a4a;
+    fill:#474a4a;
     cursor: pointer;
     scale: 150%;
 }
@@ -145,7 +145,7 @@ p, h1{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    border: 2px solid #474a4a;
+    border: 1px solid #474a4a;
     border-radius: 25px;
     height: 100px;
     padding: 2rem;
@@ -214,7 +214,6 @@ p, h1{
     background-color: #fafeff;
 }
 .button-1:hover{
-    border: none;
     background-color: #de3847;
     color: #fafeff;
     cursor: pointer;
@@ -227,11 +226,10 @@ p, h1{
     font-weight: 550;
     font-size: 1rem;
     border-radius: 10px;
+    opacity: 0.8;
 }
 .button-2:hover{
-    border: 2px solid #044573;
-    background-color: #fafeff;
-    color: #044573;
+    opacity: 1;
     cursor: pointer;
 }
 .social-container > *:hover{
@@ -251,7 +249,7 @@ p, h1{
     gap: 6rem;
     width: 70vh;
     height: 12vh;
-    border: 2px solid #474a4a;
+    border: 1px solid #474a4a;
     border-radius: 50px;
 }
 .contact-container .icon{
@@ -274,6 +272,10 @@ p, h1{
 
 /*Mobiles*/
 @media screen and (max-width:480px){
+    .top-bar{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     .section{
         height: fit-content;
         margin-bottom: 75px;
