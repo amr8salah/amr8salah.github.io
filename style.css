@@ -69,6 +69,7 @@ p, h1{
 }
 .menu-icon{
     fill:#474a4a;
+    color: #474a4a;
     cursor: pointer;
     scale: 150%;
 }
