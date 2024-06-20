@@ -68,8 +68,7 @@ p, h1{
     cursor: pointer;
 }
 .menu-icon{
-    fill:#474a4a;
-    color: #474a4a;
+    color:#474a4a;
     cursor: pointer;
     scale: 150%;
 }
@@ -252,13 +251,13 @@ p, h1{
     height: 12vh;
     border: 1px solid #474a4a;
     border-radius: 50px;
+    color: #474a4a;
 }
 .contact-container .icon{
     scale:200%;
     fill:#474a4a;
 }
 .contact-container p{
-    color: #474a4a;
     font-size: 1.5rem;
 }
 .contact-container p:hover{
