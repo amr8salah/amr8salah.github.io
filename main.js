@@ -28,7 +28,7 @@ function toggleMiniMenu(){
 }
 function sendEmail() 
 {
-    window.location = "mailto:amrnandbox@gmail.com";
+    window.location = "mailto:amr.salah.alahmady@gmail.com";
 }
 function gotoBabyPhotoshop(){
     window.open("https://github.com/Belal-El-Shabrawy/assign3");
